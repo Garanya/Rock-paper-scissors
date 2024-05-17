@@ -19,4 +19,18 @@ function getComputerChoice() {
     return computer_choice;
 }
 
+function getHumanChoice() {
+    let user_choice = prompt('Enter your choice', '').toLowerCase();
+    
+    /* Ask for input until one of 'rock', 'paper', or 'scissors' is entered. */
+
+    while((user_choice != 'rock') && (user_choice != 'paper') && (user_choice != 'scissors')) {
+        alert("Your choice is invalid. Please choose one of 'rock', 'paper', or 'scissors'.");
+        user_choice = getHumanChoice();
+    }
+
+    return user_choice;
+}
+
 console.log(getComputerChoice());
+console.log(getHumanChoice());
