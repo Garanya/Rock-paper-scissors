@@ -58,7 +58,6 @@ function playGame() {
     let computer_score = 0;
     let human_score = 0;
     let winner;
-    let final_winner;
     let round = 1;
 
     while(round <= 5){
